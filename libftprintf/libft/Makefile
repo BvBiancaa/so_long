@@ -6,7 +6,7 @@
 #    By: bmuni <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 19:08:40 by bmuni             #+#    #+#              #
-#    Updated: 2022/11/06 12:33:19 by bmuni            ###   ########.fr        #
+#    Updated: 2023/04/11 15:31:29 by bmuni            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ SRC=ft_atoi.c	\
     ft_split.c	\
     ft_strchr.c	\
     ft_strdup.c	\
+    ft_strcmp.c	\
     ft_strjoin.c	\
     ft_strlcat.c	\
     ft_strlcpy.c	\

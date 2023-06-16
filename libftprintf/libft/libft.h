@@ -6,7 +6,7 @@
 /*   By: bmuni <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 19:08:06 by bmuni             #+#    #+#             */
-/*   Updated: 2022/11/06 12:32:26 by bmuni            ###   ########.fr       */
+/*   Updated: 2023/04/11 15:32:21 by bmuni            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -54,6 +54,7 @@ char	*ft_strim(char const *s1, char const *set);
 char	**ft_split(char const *str, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int		ft_strcmp(char *s1, char *s2);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
