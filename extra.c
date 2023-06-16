@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   extra.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmuni <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: bianca <bianca@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 23:44:21 by bmuni             #+#    #+#             */
-/*   Updated: 2022/12/08 23:44:23 by bmuni            ###   ########.fr       */
+/*   Updated: 2023/06/16 12:35:34 by bianca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,8 @@ int	ft_check_walls(char **map, char *s)
 				return (0);
 			else if ((y == ft_map_lines(s) - 1) && map[y][x] != '1')
 				return (0);
-			else if ((x == 0 || x == ft_strlen(map[1])) && map[y][x] != '1')
+			else if ((x == 0 || x == ft_strlen(map[y]) - 1)
+				&& map[y][x] != '1' && map[y][x] != '\n')
 				return (0);
 		}
 	}

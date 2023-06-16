@@ -93,18 +93,18 @@ int	ft_setup(t_stru *princ, int argc, char **argv)
 	princ->moves = 0;
 	princ->map = ft_map_setup(argc, argv, princ);
 	if (princ->map == NULL)
-		return (0);
+		return (ft_printf("Error\n"));
 	game_init(princ, argv[1]);
-	return (1);
+	return (0);
 }
 
 int	main(int argc, char **argv)
 {
 	t_stru	princ;
 
-	if (ft_setup(&princ, argc, argv) == 0)
+	if (ft_setup(&princ, argc, argv) != 0)
 		exit(0);
-	mlx_key_hook(princ.window, ft_input, &princ);
+	mlx_hook(princ.window, 2, (1l << 0), ft_input, &princ);
 	mlx_hook(princ.window, 17, 0, ft_quit, &princ);
 	mlx_loop_hook(princ.mlx, ft_anim, &princ);
 	mlx_loop(princ.mlx);
