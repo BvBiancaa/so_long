@@ -31,3 +31,6 @@ Throughout the course of the project, it is possible to acquire various skills, 
 - Event handling: Managing events, such as handling character movement in response to player input.
 
 - Debugging and testing: Identifying and resolving bugs and errors in the code through the debugging process.
+
+![so_long](https://github.com/BvBiancaa/so_long/assets/111921780/3508a967-9e44-49df-98e2-223098083df7)
+
